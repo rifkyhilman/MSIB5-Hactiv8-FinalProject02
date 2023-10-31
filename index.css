@@ -1,0 +1,20 @@
+body {
+    width: 1440px;
+    height: 5095px;
+    flex-shrink: 0;
+    background: #FFF;
+}
+
+.header {
+    width: 100%; 
+    height: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex
+}
+
+.container-header {
+    width: 1240px; 
+    height: 50px; 
+    position: relative
+}
