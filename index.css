@@ -5,16 +5,362 @@ body {
     background: #FFF;
 }
 
-.header {
-    width: 100%; 
-    height: 100%; 
-    justify-content: center; 
-    align-items: center; 
-    display: inline-flex
+header {
+    margin: 50px 100px 100px 100px;
+    display: flex;
+    width: 1240px;
+    height: 50px;
+    flex-shrink: 0;
 }
 
-.container-header {
-    width: 1240px; 
-    height: 50px; 
-    position: relative
+ /* navbar */
+ nav {
+    width: 1240px;
+    height: 50px;
+    float: left;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ nav ul {
+    display: flex;
+    overflow: hidden;
+ }
+
+ nav ul li {
+    list-style: none;
+    float: left;
+    
+ }
+
+ nav ul li a {
+    color: #234CAD;
+    font-family: nunito;
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    padding: 0px 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    text-decoration: none;
+    
+ }
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: #234CAD;
+    background-color: #F2F6FF;
+    border-radius: 25px;
+    
+}
+
+.d-flex {
+    display: inline-flex;
+}
+
+.btn {
+    display: flex;
+    gap: 25px;
+    
+}
+
+.login-button {
+    width: 135px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 2px solid #234CAD;
+    color: #234CAD;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    background: none;
+}
+
+.login-button:hover {
+    background-color: #234CAD;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+}
+
+.signup-button {
+    width: 135px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #F2F6FF;
+    border: none;
+    color: #234CAD;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px; /* 161.111% */
+}
+
+.signup-button:hover {
+    background-color: #234CAD;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+}
+
+/* menu button */
+.menu-button {
+    background: none;
+    border: none;
+    flex-shrink: 0;
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 367px;
+}
+
+.menu-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #F2F6FF;
+    border-radius: 25px;
+    min-width: 200px;
+}
+
+.dropdown li {
+    list-style: none;
+}
+.dropdown li a {
+    color: #234CAD;
+    display: block;
+    color: #234CAD;
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px; /* 161.111% */
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-button:hover .dropdown{
+    display: block;
+}
+
+.dropdown li a:hover {
+    cursor: pointer;
+    background-color: #234CAD;
+    color: #FFF;
+    border-radius: 25px;
+}
+
+.menu-button img:hover {
+    cursor: pointer;
+}
+
+/* hero */
+.hero {
+    margin-left: 100px;
+    display: flex;
+    width: 1375px;
+    height: 611px;
+    padding: 0px 15px 25px 0px;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: black;
+}
+
+.banner {
+    display: inline-flex;
+    gap: 100px;
+    width: 1240px;
+    height: 575px;
+    flex-shrink: 0;
+    background-color: #F2F6FF;
+    border-radius: 60px;
+    padding-bottom: 36px;
+}
+.content {
+    margin: 108px 0px 107px 100px;
+}
+
+.text-content {
+    width: 375px;
+    height: 245px;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+}
+
+p {
+    color: #234CAD;
+    font-family: 'Nunito';
+
+}
+.main-title {
+    width: 375px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 116.667% */
+}
+
+ .text-body {
+    width: 304px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.btn-primary {
+    width: 200px;
+    height: 65px;
+    flex-shrink: 0;
+    border-radius: 32.5px;
+    border: 2px solid #234CAD;
+    background: none;
+    color: #234CAD;
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 163.636% */
+}
+
+.btn-primary:hover {
+    background-color: #234CAD;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.ui-element {
+    width: 800px;
+    height: 550px;
+    flex-shrink: 0;
+    margin-top: 36px;
+}
+
+.card1 {
+    width: 75px;
+    height: 75px;
+    flex-shrink: 0;
+}
+
+.card1 img {
+    align-items: center;
+}
+
+.card2 {
+    width: 350px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    display: flex;
+}
+
+.card2 img {
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    padding: 24px 20px;
+}
+
+.text-card {
+    display: flex;
+    width: 157px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    margin-top: 32px;
+    
+}
+
+.title-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px; /* 131.25% */
+}
+
+.bd-text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 175% */
+}
+
+.card3 {
+    width: 276px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+    margin-top: 25px;
+}
+
+.card3 img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 20px 20px;
+}
+
+.participants {
+    width: 130px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.items-1 {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: #F2F6FF;
+    stroke-width: 2px;
+    stroke: #FFF;
+}
+
+.items-2 {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: #F2F6FF;
+    stroke-width: 2px;
+    stroke: #FFF;
+}
+
+.items-3 {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: #F2F6FF;
+    stroke-width: 2px;
+    stroke: #FFF;
+}
+
+.items-4 {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: #F2F6FF;
+    stroke-width: 2px;
+    stroke: #FFF;
 }
