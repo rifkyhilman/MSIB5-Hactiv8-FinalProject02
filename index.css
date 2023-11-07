@@ -251,43 +251,48 @@ nav ul li a:hover {
     gap: 25px;
 }
 
-.card1 {
+.card-1 {
     width: 75px;
     height: 75px;
     flex-shrink: 0;
     background-color: black;
 }
 
-.card1 img {
+.card-1 img {
     width: 75px;
     height: 75px;
     flex-shrink: 0;
 }
 
-.card2 {
+.card-2 {
     width: 350px;
     height: 100px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #FFF;
-    display: flex;
 }
 
-.card2 img {
+.in-content {
+    width: 230px;
+    height: 53px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.in-content img {
     width: 53px;
     height: 53px;
     flex-shrink: 0;
-    padding: 24px 20px;
 }
 
 .text-card {
     display: flex;
-    width: 157px;
     flex-direction: column;
+    width: 157px;
     justify-content: center;
     align-items: flex-start;
-    /* gap: 3px; */
-    padding-top: 32px;
+    gap: 3px;
 }
 
 .title-text {
@@ -304,7 +309,7 @@ nav ul li a:hover {
     line-height: 21px; /* 175% */
 }
 
-.card3 {
+.card-3 {
     width: 276px;
     height: 160px;
     flex-shrink: 0;
@@ -313,7 +318,7 @@ nav ul li a:hover {
     margin-top: 25px;
 }
 
-.card3 img {
+.card-3 img {
     width: 60px;
     height: 60px;
     flex-shrink: 0;
