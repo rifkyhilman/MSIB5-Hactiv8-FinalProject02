@@ -1,8 +1,9 @@
 
 body {
     width: 1440px;
-    height: 5095px;
-    flex-shrink: 0;
+    height: 2392px;
+    margin-left: auto;
+    margin-right: auto;
     background: #FFF;
     font-family: Nunito;
     color: #234CAD;
@@ -1428,3 +1429,201 @@ nav ul li a:hover {
 
 /* ==================================================== */
 /* ==================================================== */
+
+.about-container {
+    display: flex;
+    width: 1040px;
+    height: 575px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 200px ;
+}
+
+.about-container-card {
+    width: 365px;
+    height: 360px;
+}
+
+.about-container-card-text1 h1 {
+    color: #234CAD;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.about-container-card-text2 p {
+    color: #234CAD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.about-container-card-btn {
+    width: 200px;
+    height: 65px;
+    flex-shrink: 0;
+    color: #234CAD;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    border-radius: 32.5px;
+    border: 2px solid #234CAD;
+    background: none;
+    margin-top: 50px;
+}
+
+.about-container-card2 {
+    width: 575px;
+    height: 575px;
+    margin-left: 100px;
+    border-radius: 60px;
+    background: #F2F6FF;
+    overflow: hidden;
+}
+
+.about-container-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin: 100px 0 0 100px;
+}
+
+.about-schedule-bg {
+    width: 376px;
+    height: 210px;
+    border-radius: 25px;
+    opacity: 0.0001;
+    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    filter: blur(67.95704650878906px);
+    position: absolute;
+    z-index: 1;
+}
+
+.about-schedule {
+    width: 276px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 25px;
+    background: #FFF;
+    position: relative;
+}
+
+.about-schedule-wrap {
+    padding: 20px 58px 20px 20px;
+}
+
+.about-schedule-content {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-schedule-content img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+/* 
+<!-- ========================================================================================== -->
+                                    <!-- Pricing -->
+<!-- ========================================================================================== --> */
+
+
+.pricing-container {
+    display: flex;
+    width: 1240px;
+    height: 588px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 0 0 100px;
+}
+
+.pricing-cards {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.pricing-cards h1 {
+    color: #234CAD;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px
+}
+
+.pricing-cards p {
+    color: #234CAD;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.pricing-card {
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    background: #F2F6FF;
+    padding: 70px;
+    text-align: center;
+}
+
+.pricing-card2 {
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    background: none;
+    border: 3px solid #234CAD;
+    padding: 70px;
+    text-align: center;
+
+}
+
+.pricing-card-btn {
+    width: 200px;
+    height: 65px;
+    flex-shrink: 0;
+    color: #234CAD;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    border-radius: 32.5px;
+    border: none;
+    background: white;
+    margin-top: 50px;
+}
+
+.pricing-card-btn2 {
+    width: 200px;
+    height: 65px;
+    flex-shrink: 0;
+    color: #234CAD;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    border-radius: 32.5px;
+    border: 3px solid #234CAD;
+    background: none;
+    margin-top: 50px;
+}
+
+.pricing-card-btn:hover {
+    background-color: #234CAD;
+    color: white;
+}
