@@ -1,7 +1,6 @@
 
 body {
     width: 1440px;
-    height: 2392px;
     margin-left: auto;
     margin-right: auto;
     background: #FFF;
@@ -377,6 +376,7 @@ nav ul li a:hover {
     height: 40px;
     flex-shrink: 0;
     display: inline-flex;
+    margin-top: 15px;
 }
 
 .items-1 {
@@ -1549,34 +1549,43 @@ nav ul li a:hover {
 .pricing-cards {
     display: flex;
     grid-template-columns: auto auto auto;
-    gap: 30px;
+    gap: 50px;
     margin-top: 100px;
 }
 
-.pricing-cards h1 {
+.pricing-card-price {
     color: #234CAD;
     text-align: center;
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
-    line-height: 48px
+    margin: 0;
 }
 
-.pricing-cards p {
+.pricing-card-text {
     color: #234CAD;
     text-align: center;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
 }
+
+.pricing-card-text2 {
+    color: #234CAD;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
 
 .pricing-card {
     width: 350px;
     height: 350px;
     border-radius: 60px;
     background: #F2F6FF;
-    padding: 70px;
+    padding-top: 25px;
     text-align: center;
 }
 
@@ -1586,15 +1595,14 @@ nav ul li a:hover {
     border-radius: 60px;
     background: none;
     border: 3px solid #234CAD;
-    padding: 70px;
+    padding-top: 25px;
     text-align: center;
 
 }
 
 .pricing-card-btn {
-    width: 200px;
-    height: 65px;
-    flex-shrink: 0;
+    width: 274px;
+    height: 75px;
     color: #234CAD;
     text-align: center;
     font-size: 22px;
@@ -1604,13 +1612,11 @@ nav ul li a:hover {
     border-radius: 32.5px;
     border: none;
     background: white;
-    margin-top: 50px;
 }
 
 .pricing-card-btn2 {
-    width: 200px;
-    height: 65px;
-    flex-shrink: 0;
+    width: 274px;
+    height: 75px;   
     color: #234CAD;
     text-align: center;
     font-size: 22px;
@@ -1620,10 +1626,112 @@ nav ul li a:hover {
     border-radius: 32.5px;
     border: 3px solid #234CAD;
     background: none;
-    margin-top: 50px;
 }
 
 .pricing-card-btn:hover {
     background-color: #234CAD;
     color: white;
+}
+
+.pricing-card-btn2:hover {
+    background-color: #234CAD;
+    color: white;
+}
+
+/* 
+<!-- ========================================================================================== -->
+                                    <!-- Contact Newsletter -->
+<!-- ========================================================================================== --> */
+
+
+.contact-container {
+    display: flex;
+    width: 1240px;
+    height: 383px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px auto 100px auto;
+    border-radius: 60px;
+    background: #F2F6FF;
+    padding-top: 50px;
+}
+
+.contact-form {
+    margin: 50px;
+    position: relative;
+}
+
+.contact-form #email {
+    border-radius: 17.5px;
+    background: #FFF;
+    width: 500px;
+    height: 65px;
+    padding: 0 15px 0 15px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    border: none;
+}
+
+.contact-form #email::placeholder {
+    color: #234CAD;
+    opacity: 0.5; 
+}
+
+.contact-form-btn {
+    position: absolute;
+    left: 89%;
+    top: 16%;
+    padding: 0;
+    border-radius: 30px;
+}
+
+.contact-form-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 
+<!-- ========================================================================================== -->
+                                    <!-- Footer -->
+<!-- ========================================================================================== --> */
+
+.footer-container {
+    display: flex;
+    width: 941px;
+    height: 166px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto 100px auto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer-container h1 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.footer-card1 {
+    height: 100%;
+    width: 163px;
+}
+
+.footer-card2 {
+    height: 100%;
+}
+
+.footer-card2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-card2 li {
+    margin-bottom: 10px;
 }
