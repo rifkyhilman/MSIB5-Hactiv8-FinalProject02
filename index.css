@@ -1,11 +1,17 @@
+:root {
+    --primary: #234CAD;
+    --secondary: #FFF;
+    --blueWhite: #F2F6FF
+}
 
+ 
 body {
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    background: #FFF;
+    background: var(--secondary);
     font-family: Nunito;
-    color: #234CAD;
+    color: var(--primary);
 }
 
 /* ================================================================== */
@@ -43,7 +49,7 @@ header {
  }
 
  nav ul li a {
-    color: #234CAD;
+    color: var(--primary);
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -77,8 +83,8 @@ nav ul li a:hover {
     height: 50px;
     flex-shrink: 0;
     border-radius: 25px;
-    border: 2px solid #234CAD;
-    color: #234CAD;
+    border: 2px solid var(--primary);
+    color: var(--primary);
     text-align: center;
     font-size: 18px;
     font-style: normal;
@@ -88,8 +94,8 @@ nav ul li a:hover {
 }
 
 .login-button:hover {
-    background-color: #234CAD;
-    color: #FFF;
+    background-color: var(--primary);
+    color: var(--secondary);
     cursor: pointer;
     border: none;
 }
@@ -99,9 +105,9 @@ nav ul li a:hover {
     height: 50px;
     flex-shrink: 0;
     border-radius: 25px;
-    background: #F2F6FF;
+    background: var(--blueWhite);
     border: none;
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 18px;
     font-style: normal;
@@ -110,10 +116,10 @@ nav ul li a:hover {
 }
 
 .signup-button:hover {
-    background-color: #234CAD;
+    background-color: var(--primary);
     cursor: pointer;
     border: none;
-    color: #ffffff;
+    color: var(--secondary);
 }
 
 /* menu button */
@@ -136,7 +142,7 @@ nav ul li a:hover {
 
 .dropdown {
     display: none;
-    background-color: #234CAD;
+    background-color: var(--primary);
     border-radius: 25px;
     min-width: 200px;
 }
@@ -146,7 +152,7 @@ nav ul li a:hover {
 }
 .dropdown li a {
     display: block;
-    color: #FFF;
+    color: var(--secondary);
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -161,8 +167,8 @@ nav ul li a:hover {
 
 .dropdown li a:hover {
     cursor: pointer;
-    background-color: #FFF;
-    color: #234CAD;
+    background-color: var(--secondary);
+    color: var(--primary);
     border-radius: 25px;
 }
 
@@ -188,7 +194,7 @@ nav ul li a:hover {
     width: 1240px;
     height: 575px;
     flex-shrink: 0;
-    background-color: #F2F6FF;
+    background-color: var(--blueWhite);
     border-radius: 60px;
 }
 .content {
@@ -223,9 +229,9 @@ nav ul li a:hover {
     height: 65px;
     flex-shrink: 0;
     border-radius: 32.5px;
-    border: 2px solid #234CAD;
+    border: 2px solid var(--primary);
     background: none;
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 22px;
     font-style: normal;
@@ -234,8 +240,8 @@ nav ul li a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #234CAD;
-    color: #FFF;
+    background-color: var(--primary);
+    color: var(--secondary);
     cursor: pointer;
 }
 
@@ -272,7 +278,7 @@ nav ul li a:hover {
     height: 150px;
     border-radius: 20px;
     opacity: 0.1;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;    
@@ -281,7 +287,7 @@ nav ul li a:hover {
     width: 350px;
     height: 100px;
     border-radius: 20px;
-    background: #FFF;
+    background: var(--secondary);
     position: absolute;
     z-index: 2;
     margin-left: 50px;
@@ -337,7 +343,7 @@ nav ul li a:hover {
     height: 210px;
     border-radius: 25px;
     opacity: 0.0001;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -351,7 +357,7 @@ nav ul li a:hover {
     gap: 20px;
     margin-left: 50px;
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
     position: relative;
 }
 
@@ -383,8 +389,8 @@ nav ul li a:hover {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
-    background-color: #F2F6FF;
-    border: 2px solid #FFF;
+    background-color: var(--blueWhite);
+    border: 2px solid var(--secondary);
     border-radius: 50%;
 }
 
@@ -400,8 +406,8 @@ nav ul li a:hover {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
-    background-color: #F2F6FF;
-    border: 2px solid #FFF;
+    background-color: var(--blueWhite);
+    border: 2px solid var(--secondary);
     border-radius: 50%;
     margin-left: -10px;
 }
@@ -428,7 +434,7 @@ nav ul li a:hover {
     height: 100px;
     border-radius: 25px;
     opacity: 0.05;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -439,7 +445,7 @@ nav ul li a:hover {
     height: 100px;
     flex-shrink: 0;
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
     position: absolute;
     z-index: 2;
 }
@@ -463,8 +469,8 @@ nav ul li a:hover {
     width: 60px;
     height: 60px;
     flex-shrink: 0;
-    color: #234CAD;
-    background-color: #F2F6FF;
+    color: var(--primary);
+    background-color: var(--blueWhite);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -479,9 +485,9 @@ nav ul li a:hover {
 }
 
 .notif {
-    background-color: #234CAD;
+    background-color: var(--primary);
     border-radius: 50%;
-    border: 2px solid #FFF;
+    border: 2px solid var(--secondary);
     width: 16px;
     height: 16px;
     flex-shrink: 0;
@@ -493,7 +499,7 @@ nav ul li a:hover {
 }
 
 .notif p {
-    color: #FFF;
+    color: var(--secondary);
     font-size: 6px;
     font-style: normal;
     font-weight: 700;
@@ -519,7 +525,7 @@ nav ul li a:hover {
 }
 
 .time {
-    color: #234CAD;
+    color: var(--primary);
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -540,7 +546,7 @@ nav ul li a:hover {
     height: 160px;
     flex-shrink: 0;
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
 }
 
 .upload-bg {
@@ -548,7 +554,7 @@ nav ul li a:hover {
     height: 160px;
     border-radius: 25px;
     opacity: 0.05;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -590,7 +596,7 @@ nav ul li a:hover {
     height: 100px;
     border-radius: 20px;
     opacity: 0.05;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -598,7 +604,7 @@ nav ul li a:hover {
 
 .card6-wrap {
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
 }
 
 .card-7 {
@@ -611,7 +617,7 @@ nav ul li a:hover {
     height: 100px;
     border-radius: 25px;
     opacity: 0.1;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -619,7 +625,7 @@ nav ul li a:hover {
 
 .card7 {
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
 }
 
 .in-card {
@@ -736,7 +742,7 @@ nav ul li a:hover {
     display: flex;
     gap: 100px;
     border-radius: 60px;
-    background: #F2F6FF;
+    background: var(--blueWhite);
 }
 
 .card-content {
@@ -769,7 +775,7 @@ nav ul li a:hover {
     margin: 0px 50px 50px;
     display: flex;
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
     position: absolute;
     z-index: 6;
 }
@@ -794,8 +800,8 @@ nav ul li a:hover {
     width: 75px;
     height: 75px;
     flex-shrink: 0;
-    color: #234CAD;
-    background-color: #F2F6FF;
+    color: var(--primary);
+    background-color: var(--blueWhite);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -810,9 +816,9 @@ nav ul li a:hover {
 }
 
 .lg-notif {
-    background-color: #234CAD;
+    background-color: var(--primary);
     border-radius: 50%;
-    border: 2px solid #FFF;
+    border: 2px solid var(--secondary);
     width: 20px;
     height: 20px;
     flex-shrink: 0;
@@ -823,7 +829,7 @@ nav ul li a:hover {
 }
 
 .lg-notif p {
-    color: #F7FAFC;
+    color: var(--secondary);
     font-size: 7px;
     font-style: normal;
     font-weight: 700;
@@ -894,7 +900,7 @@ nav ul li a:hover {
     position: absolute;
     z-index: 4;
     border-radius: 20px;
-    background: #FFF;
+    background: var(--secondary);
     margin: 0px 25px 25px;
 }
 
@@ -918,8 +924,8 @@ nav ul li a:hover {
     width: 60px;
     height: 60px;
     flex-shrink: 0;
-    color: #234CAD;
-    background-color: #F2F6FF;
+    color: var(--primary);
+    background-color: var(--blueWhite);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -934,9 +940,9 @@ nav ul li a:hover {
 }
 
 .md-notif {
-    background-color: #234CAD;
+    background-color: var(--primary);
     border-radius: 50%;
-    border: 2px solid #FFF;
+    border: 2px solid var(--secondary);
     width: 16px;
     height: 16px;
     flex-shrink: 0;
@@ -946,7 +952,7 @@ nav ul li a:hover {
 }
 
 .md-notif p {
-    color: #F7FAFC;
+    color: var(--secondary);
     font-size: 6px;
     font-style: normal;
     font-weight: 700;
@@ -986,7 +992,7 @@ nav ul li a:hover {
 }
 
 .md-time {
-    color: #234CAD;
+    color: var(--primary);
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -1015,7 +1021,7 @@ nav ul li a:hover {
     width: 262px;
     height: 75px;
     border-radius: 15px;
-    background: #FFF;
+    background: var(--secondary);
     position: absolute;
     z-index: 2;
     margin: 0px 10px 10px;
@@ -1041,8 +1047,8 @@ nav ul li a:hover {
     width: 45px;
     height: 45px;
     flex-shrink: 0;
-    color: #234CAD;
-    background-color: #F2F6FF;
+    color: var(--primary);
+    background-color: var(--blueWhite);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -1057,9 +1063,9 @@ nav ul li a:hover {
 }
 
 .sm-notif {
-    background-color: #234CAD;
+    background-color: var(--primary);
     border-radius: 50%;
-    border: 2px solid #FFF;
+    border: 2px solid var(--secondary);
     width: 12px;
     height: 12px;
     flex-shrink: 0;
@@ -1070,7 +1076,7 @@ nav ul li a:hover {
 }
 
 .sm-notif p {
-    color: #F7FAFC;
+    color: var(--secondary);
     font-size: 4px;
     font-style: normal;
     font-weight: 700;
@@ -1110,7 +1116,7 @@ nav ul li a:hover {
 }
 
 .sm-time {
-    color: #234CAD;
+    color: var(--primary);
     font-size: 7px;
     font-style: normal;
     font-weight: 400;
@@ -1127,7 +1133,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     margin-top: 108px;
-    background-color: #FFF;
+    background-color: var(--secondary);
 }
 .txt {
     width: 340px;
@@ -1158,20 +1164,20 @@ nav ul li a:hover {
     width: 200px;
     height: 65px;
     flex-shrink: 0;
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 36px; /* 163.636% */
     border-radius: 32.5px;
-    border: 2px solid #234CAD;
+    border: 2px solid var(--primary);
     background: none;
 }
 
 .btn-txt:hover {
-    color: #FFF;
-    background-color: #234CAD;
+    color: var(--secondary);
+    background-color: var(--primary);
     cursor: pointer;
     border: none;
 }
@@ -1226,7 +1232,7 @@ nav ul li a:hover {
     height: 575px;
     flex-shrink: 0;
     border-radius: 60px;
-    background: #F2F6FF;
+    background: var(--blueWhite);
 }
 
 .content-center {
@@ -1263,7 +1269,7 @@ nav ul li a:hover {
     height: 100px;
     border-radius: 25px;
     opacity: 0.05;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -1272,7 +1278,7 @@ nav ul li a:hover {
 .comp1-wrap {
     position: absolute;
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
     z-index: 2;
 }
 
@@ -1318,7 +1324,7 @@ nav ul li a:hover {
     height: 100px;
     border-radius: 25px;
     opacity: 0.05;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);  
     position: absolute;
     z-index: 1;  
@@ -1326,7 +1332,7 @@ nav ul li a:hover {
 
 .comp4-wrap {
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
 }
 
 .comp-c2 {
@@ -1344,7 +1350,7 @@ nav ul li a:hover {
     height: 210px;
     border-radius: 25px;
     opacity: 0.1;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;    
     z-index: 2;
@@ -1355,7 +1361,7 @@ nav ul li a:hover {
     height: 160px;
     margin-left: 50px;
     border-radius: 20px;
-    background: #FFF;
+    background: var(--secondary);
     position: absolute;
     z-index: 3;
 }
@@ -1371,7 +1377,7 @@ nav ul li a:hover {
     height: 100px;
     border-radius: 20px;
     opacity: 0.05;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -1379,7 +1385,7 @@ nav ul li a:hover {
 
 .comp6 {
     border-radius: 20px;
-    background: #FFF;
+    background: var(--secondary);
 }
 
 .comp-7 {
@@ -1393,7 +1399,7 @@ nav ul li a:hover {
     height: 100px;
     border-radius: 20px;
     opacity: 0.05;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;    
@@ -1401,7 +1407,7 @@ nav ul li a:hover {
 
 .comp7-wrap {
     border-radius: 20px;
-    background: #FFF;
+    background: var(--secondary);
 }
 
 .comp-8 {
@@ -1414,7 +1420,7 @@ nav ul li a:hover {
     height: 160px;
     border-radius: 25px;
     opacity: 0.0962;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -1424,7 +1430,7 @@ nav ul li a:hover {
     position: absolute;
     z-index: 2;
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
 }
 
 /* ==================================================== */
@@ -1445,7 +1451,7 @@ nav ul li a:hover {
 }
 
 .about-container-card-text1 h1 {
-    color: #234CAD;
+    color: var(--primary);
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -1453,7 +1459,7 @@ nav ul li a:hover {
 }
 
 .about-container-card-text2 p {
-    color: #234CAD;
+    color: var(--primary);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1464,14 +1470,14 @@ nav ul li a:hover {
     width: 200px;
     height: 65px;
     flex-shrink: 0;
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
     border-radius: 32.5px;
-    border: 2px solid #234CAD;
+    border: 2px solid var(--primary);
     background: none;
     margin-top: 50px;
 }
@@ -1481,7 +1487,7 @@ nav ul li a:hover {
     height: 575px;
     margin-left: 100px;
     border-radius: 60px;
-    background: #F2F6FF;
+    background: var(--blueWhite);
     overflow: hidden;
 }
 
@@ -1497,7 +1503,7 @@ nav ul li a:hover {
     height: 210px;
     border-radius: 25px;
     opacity: 0.0001;
-    background: linear-gradient(35deg, #234CAD 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
+    background: linear-gradient(35deg, var(--primary) 9.21%, rgba(35, 76, 173, 0.50) 110.31%);
     filter: blur(67.95704650878906px);
     position: absolute;
     z-index: 1;
@@ -1510,7 +1516,7 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 20px;
     border-radius: 25px;
-    background: #FFF;
+    background: var(--secondary);
     position: relative;
 }
 
@@ -1554,7 +1560,7 @@ nav ul li a:hover {
 }
 
 .pricing-card-price {
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 56px;
     font-style: normal;
@@ -1563,7 +1569,7 @@ nav ul li a:hover {
 }
 
 .pricing-card-text {
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 25px;
     font-style: normal;
@@ -1571,7 +1577,7 @@ nav ul li a:hover {
 }
 
 .pricing-card-text2 {
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 25px;
     font-style: normal;
@@ -1584,7 +1590,7 @@ nav ul li a:hover {
     width: 350px;
     height: 350px;
     border-radius: 60px;
-    background: #F2F6FF;
+    background: var(--blueWhite);
     padding-top: 25px;
     text-align: center;
 }
@@ -1594,7 +1600,7 @@ nav ul li a:hover {
     height: 350px;
     border-radius: 60px;
     background: none;
-    border: 3px solid #234CAD;
+    border: 3px solid var(--primary);
     padding-top: 25px;
     text-align: center;
 
@@ -1603,7 +1609,7 @@ nav ul li a:hover {
 .pricing-card-btn {
     width: 274px;
     height: 75px;
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 22px;
     font-style: normal;
@@ -1611,31 +1617,31 @@ nav ul li a:hover {
     line-height: 36px;
     border-radius: 32.5px;
     border: none;
-    background: white;
+    background: var(--secondary);
 }
 
 .pricing-card-btn2 {
     width: 274px;
     height: 75px;   
-    color: #234CAD;
+    color: var(--primary);
     text-align: center;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
     border-radius: 32.5px;
-    border: 3px solid #234CAD;
+    border: 3px solid var(--primary);
     background: none;
 }
 
 .pricing-card-btn:hover {
-    background-color: #234CAD;
-    color: white;
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
 .pricing-card-btn2:hover {
-    background-color: #234CAD;
-    color: white;
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
 /* 
@@ -1653,7 +1659,7 @@ nav ul li a:hover {
     flex-direction: column;
     margin: 200px auto 100px auto;
     border-radius: 60px;
-    background: #F2F6FF;
+    background: var(--blueWhite);
     padding-top: 50px;
 }
 
@@ -1664,7 +1670,7 @@ nav ul li a:hover {
 
 .contact-form #email {
     border-radius: 17.5px;
-    background: #FFF;
+    background: var(--secondary);
     width: 500px;
     height: 65px;
     padding: 0 15px 0 15px;
@@ -1676,7 +1682,7 @@ nav ul li a:hover {
 }
 
 .contact-form #email::placeholder {
-    color: #234CAD;
+    color: var(--primary);
     opacity: 0.5; 
 }
 
